@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --v-drk-blue: hsl(217, 19%, 35%);
+    --drk-blue: hsl(214, 17%, 51%);
+    --gr-blue: hsl(212, 23%, 69%);
+    --lt-gr-blue: hsl(210, 46%, 95%);
+}
+
+body {
+    font-size: 13px;
+    font-family: 'Manrope', sans-serif;
+    background-color: var(--lt-gr-blue);
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    width: auto;
+    margin: 15vw 1.25rem;
+}
+
+.card img.main-img {
+    width: 100%;
+}
+
+.card p.heading-txt {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--v-drk-blue);
+}
+
+.secondary {
+    color: var(--drk-blue);
+}
+
+.card-content {
+    margin: 1rem 1rem;
+}
+
+.author-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.author-section img.profile {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+}
+
+.author-details {
+    display: flex;
+    gap: 1rem;
+}
+
+.author-section .share {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: var(--lt-gr-blue);
+    background-image: url('images/icon-share.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+}
