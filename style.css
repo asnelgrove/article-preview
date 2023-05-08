@@ -26,12 +26,18 @@ body {
 
 .card img.main-img {
     width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
 }
 
-.card p.heading-txt {
-    font-size: 16px;
+p.primary-txt, p.primary-txt-small {
     font-weight: 700;
     color: var(--v-drk-blue);
+    margin-top: 1rem;
+}
+
+p.primary-txt {
+    font-size: 16px;
 }
 
 .secondary {
@@ -39,33 +45,65 @@ body {
 }
 
 .card-content {
-    margin: 1rem 1rem;
+    padding-inline: 1rem;
+    padding-bottom: 0.75rem;
 }
 
 .author-section {
+    position: relative;
+}
+
+.author-section, .overlay {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 1rem;
+    padding-inline: 1rem;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
 }
 
 .author-section img.profile {
-    width: 2rem;
-    height: 2rem;
+    width: 2.2rem;
+    height: 2.2rem;
     border-radius: 50%;
 }
 
-.author-details {
+.small-row {
     display: flex;
+    align-items: center;
     gap: 1rem;
 }
 
-.author-section .share {
+.author-section .share, .overlay .share {
     width: 2rem;
     height: 2rem;
+    border: none;
     border-radius: 50%;
     background-color: var(--lt-gr-blue);
     background-image: url('images/icon-share.svg');
     background-position: center;
     background-repeat: no-repeat;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    inset: 0;
+    z-index: 2;
+    background-color: var(--v-drk-blue);
+    color: var(--gr-blue);
+}
+
+.capitalize {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.hidden {
+    display: none;
+}
+
+.smaller {
+    font-size: 10px;
 }

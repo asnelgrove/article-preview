@@ -23,7 +23,7 @@
   <div class="card">
     <img src="images/drawers.jpg" class="main-img">
 
-  <p class="heading-txt card-content"> 
+  <p class="primary-txt card-content"> 
   Shift the overall look and feel by adding these wonderful 
   touches to furniture in your home
   </p>
@@ -35,27 +35,37 @@
   </p>
   
   <div class="secondary card-content author-section">
-    <div class="author-details">
+    <div class="small-row">
       <img src="images/avatar-michelle.jpg" class="profile">
 
       <div>
-      <p>Michelle Appleton</p>
+      <p class="primary-txt-small">Michelle Appleton</p>
       <p>28 Jun 2020</p>
       </div>
 
     </div>
 
-    <div class="share"></div>
+    <button class="share" onclick="toggleHidden(overlay)"></button>
     
+    <div class="overlay hidden" id="overlay">
+      <div class="small-row">
+        <p class="capitalize">Share </p> 
+        <img src="images/icon-facebook.svg">
+        <img src="images/icon-twitter.svg">
+        <img src="images/icon-pinterest.svg">
+      </div>
+      <button class="share" onclick="toggleHidden(overlay)"></button>
+    </div>
+
   </div>
   
-
-  Share
   </div>
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Andrew</a>.
   </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
